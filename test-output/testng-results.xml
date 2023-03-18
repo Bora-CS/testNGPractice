@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-18T12:49:18 EDT" name="regression" finished-at="2023-03-18T12:49:18 EDT" duration-ms="40">
+    <groups>
+    </groups>
+    <test started-at="2023-03-18T12:49:18 EDT" name="TestNG_Test" finished-at="2023-03-18T12:49:18 EDT" duration-ms="40">
+      <class name="learnTestNG.LearnBeforeAfter">
+        <test-method is-config="true" signature="beforeTestNGTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="beforeTestNGTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestNGTest -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="startTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="test1()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="test1" finished-at="2023-03-18T12:49:18 EDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="test2" finished-at="2023-03-18T12:49:18 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="startTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="startTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="test3()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="test3" finished-at="2023-03-18T12:49:18 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="endTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- learnTestNG.LearnBeforeAfter -->
+    </test> <!-- TestNG_Test -->
+  </suite> <!-- regression -->
+</testng-results>
