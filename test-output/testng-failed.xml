@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="3" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="learnTestNG.LearnTestAnatation">
+      <class name="parallelPractice.PracticeParalle">
         <methods>
-          <include name="createUserForTest"/>
-          <include name="firstTest"/>
+          <include name="verifyUserAbleToDeleteEducation"/>
+          <include name="verifyUserAbleToEditEducation"/>
+          <include name="verifyUserAbleToAddEducation"/>
         </methods>
-      </class> <!-- learnTestNG.LearnTestAnatation -->
+      </class> <!-- parallelPractice.PracticeParalle -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

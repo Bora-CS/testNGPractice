@@ -1,45 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-18T12:49:18 EDT" name="regression" finished-at="2023-03-18T12:49:18 EDT" duration-ms="40">
+  <suite started-at="2023-04-18T21:38:35 EDT" name="Suite" finished-at="2023-04-18T21:38:50 EDT" duration-ms="14945">
     <groups>
     </groups>
-    <test started-at="2023-03-18T12:49:18 EDT" name="TestNG_Test" finished-at="2023-03-18T12:49:18 EDT" duration-ms="40">
-      <class name="learnTestNG.LearnBeforeAfter">
-        <test-method is-config="true" signature="beforeTestNGTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="beforeTestNGTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="10" status="PASS">
+    <test started-at="2023-04-18T21:38:35 EDT" name="Test" finished-at="2023-04-18T21:38:50 EDT" duration-ms="14945">
+      <class name="parallelPractice.PracticeParalle">
+        <test-method signature="verifyUserAbleToDeleteEducation()[pri:0, instance:parallelPractice.PracticeParalle@783a467b]" started-at="2023-04-18T21:38:35 EDT" name="verifyUserAbleToDeleteEducation" finished-at="2023-04-18T21:38:49 EDT" duration-ms="14070" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#loginButton"}
+  (Session info: chrome=111.0.5563.64)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f481e92a06aa2d3bb454873ed791fabd, findElement {using=id, value=loginButton}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/bq/p1v0v99j6hj...}, goog:chromeOptions: {debuggerAddress: localhost:49538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49538/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f481e92a06aa2d3bb454873ed791fabd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#loginButton"}
+  (Session info: chrome=111.0.5563.64)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f481e92a06aa2d3bb454873ed791fabd, findElement {using=id, value=loginButton}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/bq/p1v0v99j6hj...}, goog:chromeOptions: {debuggerAddress: localhost:49538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49538/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f481e92a06aa2d3bb454873ed791fabd
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+at parallelPractice.PracticeParalle.verifyUserAbleToDeleteEducation(PracticeParalle.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTestNGTest -->
-        <test-method is-config="true" signature="startTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="startTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyUserAbleToDeleteEducation -->
+        <test-method signature="verifyUserAbleToEditEducation()[pri:0, instance:parallelPractice.PracticeParalle@783a467b]" started-at="2023-04-18T21:38:35 EDT" name="verifyUserAbleToEditEducation" finished-at="2023-04-18T21:38:47 EDT" duration-ms="12532" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#loginButton"}
+  (Session info: chrome=111.0.5563.64)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [411f8bc182586fbdd58ddadc80ee6ec1, findElement {using=id, value=loginButton}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/bq/p1v0v99j6hj...}, goog:chromeOptions: {debuggerAddress: localhost:49536}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49536/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 411f8bc182586fbdd58ddadc80ee6ec1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#loginButton"}
+  (Session info: chrome=111.0.5563.64)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [411f8bc182586fbdd58ddadc80ee6ec1, findElement {using=id, value=loginButton}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/bq/p1v0v99j6hj...}, goog:chromeOptions: {debuggerAddress: localhost:49536}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49536/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 411f8bc182586fbdd58ddadc80ee6ec1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+at parallelPractice.PracticeParalle.verifyUserAbleToEditEducation(PracticeParalle.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method signature="test1()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="test1" finished-at="2023-03-18T12:49:18 EDT" duration-ms="3" status="PASS">
+        </test-method> <!-- verifyUserAbleToEditEducation -->
+        <test-method signature="verifyUserAbleToAddEducation()[pri:0, instance:parallelPractice.PracticeParalle@783a467b]" started-at="2023-04-18T21:38:35 EDT" name="verifyUserAbleToAddEducation" finished-at="2023-04-18T21:38:50 EDT" duration-ms="14907" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pages.LoginPage.login(LoginPage.java:11)
+at parallelPractice.PracticeParalle.verifyUserAbleToAddEducation(PracticeParalle.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="test2" finished-at="2023-03-18T12:49:18 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="startTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="startTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="startTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="startTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method signature="test3()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="test3" finished-at="2023-03-18T12:49:18 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:learnTestNG.LearnBeforeAfter@316bcf94]" started-at="2023-03-18T12:49:18 EDT" name="endTest" finished-at="2023-03-18T12:49:18 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- learnTestNG.LearnBeforeAfter -->
-    </test> <!-- TestNG_Test -->
-  </suite> <!-- regression -->
+        </test-method> <!-- verifyUserAbleToAddEducation -->
+      </class> <!-- parallelPractice.PracticeParalle -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

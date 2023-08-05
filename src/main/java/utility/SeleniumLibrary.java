@@ -1,7 +1,9 @@
 package utility;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class SeleniumLibrary {
 	
@@ -29,12 +31,26 @@ public class SeleniumLibrary {
 	}
 	
 	
+	public void JSClick(By locator) {
+		WebElement m=driver.findElement(locator);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		
+		js.executeScript("arguments[0].click();", m);
+	}
 	
 	void dynamicWait() {
 		
 	}
 	
-	void highLight() {
+	void highLight(By locator) {
+		WebElement m=driver.findElement(locator);
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		
+		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",
+				m);
 		
 	}
 	

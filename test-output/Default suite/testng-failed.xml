@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="learnTestNG.LearnTestAnatation">
+      <class name="regressionSuite.AddEducation">
         <methods>
-          <include name="createUserForTest"/>
-          <include name="firstTest"/>
+          <include name="verifyUserAbleToAddEducation"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- learnTestNG.LearnTestAnatation -->
+      </class> <!-- regressionSuite.AddEducation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
